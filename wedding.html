@@ -1,0 +1,34 @@
+{% extends 'app1/main.html' %}
+{% load static %}
+{% block title %}
+        KKphotography | Wedding
+{% endblock title %}
+{% block content %}
+
+<div class="detail-container">
+    <div class="detail-header" style="padding: 20px;">
+        <center><h1 style="font-weight: 10;">Wedding</h1>
+        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquid.</small>
+        </center>
+    </div>
+    
+    <section>
+        <div class="detail-body">
+            <ul>
+                {% for w in wedding %}
+
+                <li><img src="{{w.photo}}" alt="" class="det-img"></li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+    <div>
+        <center><small>loading ...</small></center>
+    </div>
+</div>
+
+
+  
+{% endblock content %}

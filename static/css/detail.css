@@ -1,0 +1,32 @@
+.detail-body{
+    width: 100%;
+    height: auto;
+}
+.detail-body ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detail-body ul li{
+
+    list-style: none;
+}
+.det-img{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .det-img{
+        width: 100%;
+        height: unset !important;
+        margin: 10px;
+        margin-left: -20px !important;
+        border-radius: 7px;
+    }
+    .detail-body ul{
+        display: block;
+    }
+}

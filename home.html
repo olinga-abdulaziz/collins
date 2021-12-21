@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkphoto . home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Spartan:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="static/css/detail.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="logo-div">
+          <a class="nav-link" href="{% url 'home' %}"> <h1>kkphotography-ke <img src="static/image/kklogo.png" alt="" style="width: 50px;height: 50px;"> </h1> </a>
+        </div>
+        <div class="toogler-div">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-div">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'wedding' %}">WEDDING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'events' %}">EVENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'fasion' %}">FASION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'commercia' %}">COMMERCIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'corporate' %}">CORPORATE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'potraits' %}">POTRAITS</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+    <div class="home-contaimer">
+        <div class="home-1">
+            <img src="static/image/kklogo.png" alt="" class="logo-img">
+        </div>
+        <div class="home-2">
+            <div>
+                <h1 class="h1">𝑾𝒆 𝒄𝒂𝒑𝒕𝒖𝒓𝒆 𝒎𝒆𝒎𝒐𝒓𝒊𝒆𝒔 𝒇𝒐𝒓𝒆𝒗𝒆𝒓</h1>
+                <div>
+                    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis magnam reprehenderit doloremque et praesentium eligendi.</p>
+                </div>
+                <div>
+                   <a href="#explore"> <button class="btnCenter btnexplore">Explore</button></a>
+                    <a href="#about"><button class="btnCenter ">About Us</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="explore">
+            <div class="explore-title-div">
+                <h1>kkphotography trending work</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt asperiores esse unde nemo iusto vero. Facilis nemo quia, quidem modi adipisci illo excepturi eligendi at quaerat, est, ad corrupti?</p>
+            </div>
+            <div class="random">
+                <ul>
+              
+                    <li><img src="static/image/imgc6.jpeg" alt="" class="rimg"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="rimg"></li>
+                    <li><img src="static/image/imgc10.jpeg" alt="" class="rimg"></li>
+                    <li><img src="static/image/imgc4.jpeg" alt="" class="rimg"></li>
+                    <li><img src="static/image/imgc2.jpeg" alt="" class="rimg"></li>
+                
+                </ul>
+            </div>
+
+        
+            <div class="wedding-prev" id="explore">
+
+                <div class="wedding-container">
+                    <center>
+                        <div class="wed-desc">
+                      
+                                <h1>wedding</h1>
+                                <p>  consectetur sapiente minima deserunt, doloribus quisquam, saepe quia quibusdam. Dolorum eius repellat harum adipisci ea facere, veniam modi.</p>
+                                <button class="btnCenter">explore</button>
+                         
+                        </div>
+                    </center>
+                        <div class="wed-img">
+                            <img src="static/image/col1.jpg" alt="" class="vert-img wed-vert-img">
+                            <img src="static/image/imgc1.jpeg" alt="" class="vert-img mid-img wed-vert-img">
+                            <img src="static/image/imgc2.jpeg" alt="" class="vert-img wed-vert-img">  
+                        </div>
+                </div>
+
+            </div>
+
+
+            <div class="wedding-prev">
+
+                <div class="wedding-container">
+                    <div class="wed-img">
+                        <img src="static/image/imgc3.jpeg" alt="" class="vert-img wed-vert-img">
+                        <img src="static/image/imgc6.jpeg" alt="" class="vert-img mid-img wed-vert-img">
+                        <img src="static/image/imgc7.jpeg" alt="" class="vert-img wed-vert-img">
+                    </div>
+                    <center>
+                        <div class="wed-desc">
+                    
+                                <h1>events</h1>
+                                <p>  consectetur sapiente minima deserunt, doloribus quisquam, saepe quia quibusdam. Dolorum eius repellat harum adipisci ea facere, veniam modi.</p>
+                                <button class="btnCenter">explore</button>
+                  
+                        </div>
+                    </center>
+                        
+                </div>
+
+            </div>
+
+            <div class="wedding-prev">
+                <div class="wedding-container">
+                    <center>
+                        <div class="wed-desc">
+                     
+                                <h1>fasion</h1>
+                                <p>  consectetur sapiente minima deserunt, doloribus quisquam, saepe quia quibusdam. Dolorum eius repellat harum adipisci ea facere, veniam modi.</p>
+                                <button class="btnCenter">explore</button>
+                  
+                        </div>
+                    </center>
+                        <div class="wed-img">
+                            <img src="static/image/imgc6.jpeg" alt="" class="vert-img wed-vert-img">
+                            <img src="static/image/imgc10.jpeg" alt="" class="vert-img mid-img wed-vert-img">
+                            <img src="static/image/imgc3.jpeg" alt="" class="vert-img wed-vert-img">
+                            
+                        </div>
+                </div>
+
+            </div>
+            <center>
+                <div class="explore-menu">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repudiandae corrupti veniam amet odio voluptate sapiente repellat quaerat, natus illum!</p>
+                    <div class="button-group-div">
+                        <button class="btnCenter btnfloat">COMMERCIA >></button>
+                        <button class="btnCenter btnfloat">CORPORATE >></button>
+                        <button class="btnCenter btnfloat">POTRAITS >></button>
+                    </div>
+                </div>
+            </center>
+
+            <section>
+                <br>
+                <div class="about" id="about">
+                    <h1>About Us</h1>
+                    <div class="about-container"> 
+                   <div class="about-1">
+                    <img src="static/image/col1.jpg" alt="" class="about-img">
+                    <p><font class="start-text">L</font> orem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quaerat inventore amet impedit error dolorem, dolore rerum quibusdam natus iste aliquam distinctio voluptatum ad architecto nisi adipisci. ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quaerat inventore amet impedit error dolorem, dolore rerum quibusdam natus iste aliquam distinctio voluptatum ad architecto nisi adipisci.  Similique, omnis quos? Quae, necessitatibus odio consequatur nam, beatae aspernatur impedit a deserunt, fugiat non quasi repellendus similique in quod dolorem fuga debitis aliquid quos modi reprehenderit! Excepturi ad facilis laborum natus id voluptates, eos et numquam ipsa ut fugit earum minima sit dolore saepe molestias voluptatem! Illo reiciendis dicta esse praesentium deserunt.</p>
+                   </div>
+                   <div class="about-2">
+                       <h1>Our time of work</h1>
+                       <hr>
+                       <div class="time-content">
+                           <br>
+                        <strong>Monday - wednessday</strong> -- <font>8:00 am to 7:00 pm</font>
+                       </div>
+
+                        <div class="time-content">
+                        <br>
+                        <strong>Thursday - friday</strong> -- <font>8:00 am to 7:00 pm</font>
+                        </div>
+
+                        <div class="time-content">
+                        <br>
+                        <strong>Saturday - Sunday</strong> -- <font>8:00 am to 7:00 pm</font>
+                        </div>
+
+                   </div>
+                    </div>
+                    <br>
+                 <div class="social">
+                     <h1 class="follow-h1">Follow us</h1>
+                     <hr>
+                    
+                     <center>
+                        <div class="sos-link">
+                            
+                            
+                            
+                            
+                            <div class="link link-1"><i class="fab fa-facebook"></i> <small>facebook</small></div>
+                            <div class="link"><i class="fab fa-instagram"></i> <small>instagram</small></div>
+                            <div class="link"> <i class="fab fa-twitter"></i><small>twitter</small></div>
+                            <div class="link"><i class="fab fa-pinterest"></i> <small>pinterest</small></div>
+                     </div>
+                     <div class="y-chanel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga esse ab impedit, nemo id nam libero odit? Ex repudiandae possimus illo qui voluptate hic ullam quaerat quos quis accusamus?</p>
+                     </div>
+                     </center>
+                 </div> 
+
+                 </div>
+                 <div class="get-in-touch">
+                    <div><h1>Leave a comment</h1></div>
+                    <p> iusto praesentium iste quisquam libero nam quo soluta minus consequuntur reiciendis earum ad natus eius, voluptas labore laboriosam commodi beatae!</p>
+                    <div class="form-group">
+                        <form action="" method="POST">
+                            <div>
+                                <label for="email">Email :</label> <br>
+                                <input type="text" id="email" placeholder="your email address" class="form-control">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="name">Name :</label> <br>
+                                <input type="text" id="name" placeholder="your name" class="form-control">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="message">Message :</label> <br>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here" class="form-control"></textarea>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="submit" class="btnCenter">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="comments">
+                        <div><h1>Comments</h1></div>
+                   
+                        <div class="single-comment">
+                            <div>
+                                <ul class="comm-u">
+                           
+                                    <li>
+                                        <div >
+                                            <strong style="color: green;">Abdulaziz said</strong> <br>
+                                            <small style="color: #151f2f;">abdulaziz@gmail.com</small>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque recusandae pariatur sequi voluptatum aut quasi possimus at, quibusdam impedit, nulla, dolorem eveniet atque deserunt doloribus reprehenderit non ullam blanditiis quos.</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div >
+                                            <strong style="color: green;">Abdulaziz said</strong> <br>
+                                            <small style="color: #151f2f;">abdulaziz@gmail.com</small>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque recusandae pariatur sequi voluptatum aut quasi possimus at, quibusdam impedit, nulla, dolorem eveniet atque deserunt doloribus reprehenderit non ullam blanditiis quos.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="footer">
+                            <center>
+                                <p style="color: white; width: 70%;">  kkphotographyke@gmail.com <br>
+                                
+                                    <strong>call us</strong>
+                                    <br>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> +25478289544
+                                    <i class="fa fa-phone" aria-hidden="true"></i> +25478289544
+                                    <i class="fa fa-phone" aria-hidden="true"></i> +25478289544
+                                </p>
+
+                                <br><br>
+
+                                <p style="color: white;"><strong>Address</strong> <br>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> <br>
+                                     jomokenyatta streat Eldoret. || Moi avenue Nairobi . <br>
+                                     <small>developer : abdulazizolinga17@gmail.com</small>
+                                </p>
+                                <a href="{% url 'login' %}"><button style="padding:6px;background-color: #151f2f;color: white;">Admin</button></a>
+                                <br><br>
+                                <p class="footer-link">
+                                   <i class="fab fa-facebook"></i>
+                                   <i class="fab fa-instagram"></i>
+                                   <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-pinterest"></i>
+                                </p>
+
+                                
+                            </center>
+                        </div>
+                        <div class="bootom-div">
+                            <center>
+                                <p style="color: white;">copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021</p>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            
+        </div>
+
+      
+        
+
+
+    </section>
+
+  
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
