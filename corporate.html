@@ -1,35 +1,98 @@
-{% extends 'app1/main.html' %}
-{% load static %}
-{% block title %}
-        KKphotography | Corporate
-{% endblock title %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkphotography | corporate</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Spartan:wght@500&display=swap" rel="stylesheet">
 
-<div class="detail-container">
-    <div class="detail-header" style="padding: 20px;">
-        <center><h1 style="font-weight: 10;">Corporate</h1>
-        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquid.</small>
-        </center>
-    </div>
+
+    <link rel="stylesheet" href="static/css/detail.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body>
+
     
-    <section>
-        <div class="detail-body">
-            <ul>
-                {% for w in corporate %}
-
-                <li><img src="{{w.photo}}" alt="" class="det-img"></li>
-
-                {% endfor %}
-                
-            </ul>
+    <nav class="nav">
+        <div class="logo-div">
+          <a class="nav-link" href="home.html"> <h1>kkphotography-ke <img src="static/image/kklogo.png" alt="" style="width: 50px;height: 50px;"> </h1> </a>
         </div>
+        <div class="toogler-div">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-div">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wedding.html">WEDDING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fasion.html">FASION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="commercia.html">COMMERCIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="corporate.html">CORPORATE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="potraits.html">POTRAITS</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
 
-    </section>
-    <div>
-        <center><small>loading ...</small></center>
+
+    <div class="detail-container">
+        <div class="detail-header" style="padding: 20px;">
+            <center><h1 style="font-weight: 10;">Corporate</h1>
+            <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquid.</small>
+            </center>
+        </div>
+        
+        <section>
+            <div class="detail-body">
+                <ul>
+                   
+    
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+                    <li><img src="static/image/imgc1.jpeg" alt="" class="det-img"></li>
+    
+    
+                    
+                </ul>
+            </div>
+    
+        </section>
+        <div>
+            <center><small>loading ...</small></center>
+        </div>
     </div>
-</div>
 
-
-  
-{% endblock content %}
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
