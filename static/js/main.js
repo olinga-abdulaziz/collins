@@ -1,30 +1,25 @@
-const menu=document.querySelector('.fa-bars');
-const sidebar=document.querySelector('.hide-sidebar')
-const sidebarContent=document.querySelector('.sidebar-content-hide')
-const close=document.querySelector('.fa-times')
+const button=document.querySelector('.fa-bars');
+const x=document.querySelector('.x')
+const sidebar=document.querySelector('.hideSidebar')
 
 
-menu.addEventListener('click',(e)=>{
+
+button.addEventListener('click',(e)=>{
     showSidebar();
 })
 
-close.addEventListener('click',(e)=>{
+x.addEventListener('click',(e)=>{
     hideSidebar()
 })
 
 
 function showSidebar(){
-    sidebar.classList.remove("hide-sidebar");
-    sidebar.classList.add("show-sidebar")
-    sidebarContent.classList.remove("sidebar-content-hide")
-    sidebarContent.classList.add("sidebar-content")
-
+    sidebar.classList.remove("hideSidebar");
+    sidebar.classList.add("showSidebar")
 }
 
 function hideSidebar(){
-    sidebar.classList.remove("show-sidebar");
-    sidebar.classList.add("hide-sidebar")
-    sidebarContent.classList.remove("sidebar-content")
-    sidebarContent.classList.add("sidebar-content-hide")
+    sidebar.classList.remove("showSidebar");
+    sidebar.classList.add("hideSidebar")
 }
 

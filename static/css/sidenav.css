@@ -1,0 +1,48 @@
+:root {
+    --color1: #151f2f;
+  }
+.showSidebar{
+    width: 40vh;
+    height: 100vh;
+    background-color: #c3cfe2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 200ms ease;
+}
+.hideSidebar{
+    width: 0;
+    height: 100vh;
+    background-color: #c3cfe2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 200ms ease;
+}
+.sideLogoDiv{
+    display: flex;
+    align-items: center;
+    padding-left: 2px !important;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.sideLogoDiv span{
+    font-size: 40px;
+}
+
+.sul{
+    margin-top: 30px;
+    padding: unset;
+}
+.sli{
+    list-style: none;
+    height: 50px;
+    width: 40vh;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.sli a{
+    font-size: 20px;
+    color: var(--color1);
+}
