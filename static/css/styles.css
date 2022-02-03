@@ -103,27 +103,36 @@ body {
 .random {
   width: 100%;
   height: auto;
-  display: flex;
 }
-.random ul {
-  margin: auto;
-  display: flex;
-  padding: 20px;
+.randomUl{
+  display: flex !important;
+  width: 100%;
+  height: 40vh;
   overflow: scroll;
+  padding: 20px;
 }
-.random ul li {
-
+.randomLi{
   list-style: none;
-  margin-left: 20px;
-}
-.random ul li img {
-  width: 40vh;
+  display: flex !important;
+  width: auto;
   height: 100%;
-  border-radius: 10px;
-  box-shadow: -1rem 2px 3px gray;
+  margin-bottom: 20px;
+}
+.randomUl::-webkit-scrollbar{
+   display: none;
 }
 .rimg:hover {
   transform: scale(1.1);
+}
+.trDiv{
+  width: 100%;
+  height: 100%;
+  margin:8px 5px;
+}
+.trImg{
+  height: 100%;
+  width:30vh;
+  border-radius: 20px;
 }
 
 .wedding-prev {
@@ -417,7 +426,7 @@ body {
   .random ul {
     display: flex;
     overflow: scroll;
-    margin-left: -65px;
+
   }
 
   .random ul li img {
