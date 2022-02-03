@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="static/css/detail.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/sidenav.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </head>
-<body>
+<body onload="getData()">
 
     <nav class="nav">
         <div class="logo-div">
-          <a class="nav-link" href="home.html"> <h1>kkphotography-ke <img src="static/image/kklogo.png" alt="" style="width: 50px;height: 50px;"> </h1> </a>
+          <a class="nav-link" onclick="getData()" href="home.html"> <h1>kkphotography-ke <img src="static/image/kklogo.png" alt="" style="width: 50px;height: 50px;"> </h1> </a>
         </div>
         <div class="toogler-div">
           <i class="fas fa-bars"></i>
@@ -58,6 +59,9 @@
                     <li class="sli">
                         <a href="wedding.html">Wedding</a>
                     </li>
+                    <li class="nav-item" style="margin-top: -10px;">
+                        <a class="nav-link" href="login.html" ><button class="btnCenter" style="color: white;">ADMIN</button></a>
+                      </li>
                   </ul>
               </div>
         </div>
@@ -84,6 +88,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="potraits.html">POTRAITS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" ><button class="btnCenter" style="color: white;">ADMIN</button></a>
               </li>
           </ul>
         </div>
@@ -115,14 +122,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt asperiores esse unde nemo iusto vero. Facilis nemo quia, quidem modi adipisci illo excepturi eligendi at quaerat, est, ad corrupti?</p>
             </div>
             <div class="random">
-                <ul>
-              
-                    <li><img src="https://i.pinimg.com/originals/0c/6b/db/0c6bdb0f34fb439da41dae2d45546eac.jpg" alt="" class="rimg"></li>
-                    <li><img src="static/image/imgc1.jpeg" alt="" class="rimg"></li>
-                    <li><img src="static/image/imgc10.jpeg" alt="" class="rimg"></li>
-                    <li><img src="static/image/imgc4.jpeg" alt="" class="rimg"></li>
-                    <li><img src="static/image/imgc2.jpeg" alt="" class="rimg"></li>
-                
+                <ul class="randomUl"> 
+                    <li class="randomLi">
+
+                    </li>
                 </ul>
             </div>
 
@@ -140,9 +143,8 @@
                         </div>
                     </center>
                         <div class="wed-img">
-                            <img src="static/image/col1.jpg" alt="" class="vert-img wed-vert-img">
-                            <img src="static/image/imgc1.jpeg" alt="" class="vert-img mid-img wed-vert-img">
-                            <img src="static/image/imgc2.jpeg" alt="" class="vert-img wed-vert-img">  
+                            
+                              
                         </div>
                 </div>
 
@@ -357,8 +359,8 @@
 
 
     </section>
-
-  
+    <script src="static/js/service.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="static/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     

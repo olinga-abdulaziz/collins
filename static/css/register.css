@@ -1,0 +1,18 @@
+.registerContainer{
+    height: auto;
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+@media only screen and (max-width: 650px) {
+    .registerContainer{
+        height: auto;
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    
+    }
+
+}
